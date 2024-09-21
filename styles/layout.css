@@ -1,0 +1,52 @@
+#invite-page {
+    display: grid;
+    grid-template-columns: 32.78% 67.22%;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    overflow: auto;
+    padding: 5rem 8.125rem 5rem 8.125rem;
+
+    & .main-container {
+        max-width: 35rem;
+        margin-left: auto;
+    }
+}
+
+aside {
+    border: 20px solid black;
+    border-radius: 12px;
+    background-image: url(../assets/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1.25rem;
+
+    overflow: hidden;
+
+    & .brand-container{
+    max-width: 25rem;
+    
+    }
+
+    h1 {
+        font-family: 'Leckerli One', sans-serif;
+        font-size: 2.5rem;
+        line-height: auto;
+        color: #FF598B;
+
+        padding-top: 1rem;
+        padding-bottom: .25rem;
+        gap: 1rem;
+
+    }
+
+    span {
+        padding-top: 1rem;
+    }
+
+    
+}

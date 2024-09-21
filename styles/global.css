@@ -42,9 +42,15 @@ body {
 
     font: var(--text);
     color: var(--text-body);
+    background-color: var(--shape-background);
 }
 
 h1, h2 {
     font-family: var(--font-family-2);
     color: var(--text-heading);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }

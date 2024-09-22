@@ -23,18 +23,67 @@
     <div id="invite-page">
         <aside>
             
-            <div class="brand-container">
+            <div class="aside-container">
+                <div class="invite">
                 <img src="assets/Logo.svg" alt="ícone festivo">
                 <h1>Festivite</h1>
                 <span>Crie um convite digital para o seu evento</span>
-                
+                </div>
             </div>
         </aside>
 
             <main>
                 <div class="main-container">
                     <h1>Crie seu convite</h1>
-                    
+                    <div class="event">
+                        <img src="assets/icons/calendar.svg" alt="ícone de calendário">
+                        <h2>Sobre o evento</h2>
+                    </div>
+
+                    <form>
+                        <fieldset class="about-event">
+                            
+
+                            <div class="input-wrapper">
+                            <legend>Título</legend>
+                            <input id="localname" name="localname" type="text" placeholder="Nome do evento">
+                            </div>
+
+                            <div class="input-wrapper">
+                            <legend>Início</legend>
+                            <input id="date" name="date" type="date" placeholder="Nome do evento">
+                            </div>
+
+                            <div class="input-wrapper">
+                            <legend>Fim</legend>
+                            <input id="date" name="date" type="date" placeholder="Nome do evento">
+                            </div>
+
+                            <div class="select-wrapper">
+                                <legend>Tipo</legend>
+                                <select name="type" id="type">
+                                    <option value="online">Online</option>
+                                    <option value="presencial">Presencial</option>
+                                </select>
+                            </div>
+
+                            <div class="input-wrapper">
+                            <legend>Local</legend>
+                            <input id="local" name="local" type="text" placeholder="Link ou endereço">
+                            </div>
+
+                            <div class="textarea-wrapper">
+                                <legend>Descrição</legend>
+                                <textarea name="descryption" id="descryption" cols="60" rows="5" placeholder="Escreva os detalhes do evento">
+
+
+                                </textarea>
+                                
+                            </div>
+
+                        </fieldset>
+
+                    </form>
 
                 </div>
             </main>

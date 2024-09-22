@@ -9,37 +9,53 @@
 main {
     overflow: auto;
     padding: 5rem 8.125rem 5rem 8.125rem;
+    border: 20px solid black;
+    border-radius: 12px;
 
     & .main-container {
         max-width: 35rem;
         margin-left: auto;
+    }
+
+    & .event {
+        display: flex;
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+        gap: .75rem;
+        align-items: center;
+
+        & h2 {
+            font: 600 1.12rem/1.25 var(--font-family-2);
+        }
     }
 }
 
 aside {
     border: 20px solid black;
     border-radius: 12px;
-    background-image: url(../assets/Background.jpg);
+    background-image: url(../assets/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; 
     padding: 1.25rem;
 
-    overflow: hidden;
-
-    & .brand-container{
+    & .aside-container{
     max-width: 25rem;
     
+        & .invite {
+            padding: 2rem;
+        }
+
     }
 
-    h1 {
+    & h1 {
         font-family: 'Leckerli One', sans-serif;
         font-size: 2.5rem;
         line-height: auto;
         color: #FF598B;
 
-        padding-top: 1rem;
-        padding-bottom: .25rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
         gap: 1rem;
 
     }

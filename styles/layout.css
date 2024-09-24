@@ -15,7 +15,7 @@ main {
     border-radius: 12px;
 
     & .main-container {
-        max-width: 35rem;
+        max-width: 40rem;
         align-items: center;
         
     }
@@ -29,10 +29,6 @@ main {
 
         & h2 {
             font: 600 1.12rem/1.25 var(--font-family-2);
-        }
-
-        .customization {
-            
         }
     }
 
@@ -60,7 +56,7 @@ aside {
     padding: 1.25rem;
 
     & .aside-container{
-    max-width: 25rem;
+    max-width: 30rem;
     
         & .invite {
             padding: 2rem;

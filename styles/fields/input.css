@@ -34,7 +34,7 @@ textarea:focus {
 }
 
 .textarea-wrapper {
-    max-width: 35rem;
+    max-width: 40rem;
 }
 
 input[type="datetime-local"] {

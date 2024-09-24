@@ -1,18 +1,64 @@
-input, textarea, select {
+input, textarea, select, button {
     appearance: none;
     width: 100%;
     border-radius: .5rem;
     border: 1px solid var(--input-stroke);
     background-color: var(--shape-background);
-
+    
+    
     padding: 1rem;
 
     font: var(--text-sm);
-    color: var(--text-body);
+    color: var(--input-placeholder);
+
 }
 
 legend {
     font: var(--text-md);
 
     color: var(--text-body);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: .10rem solid var(--brand-light);
+}
+
+#datetime {
+    text-transform: uppercase;
+}
+
+.about-event .flex {
+    gap: 1.25rem;
+}
+
+.textarea-wrapper {
+    max-width: 35rem;
+}
+
+input[type="datetime-local"] {
+    &::-webkit-calendar-picker-indicator {
+        display: none;
+    }
+}
+
+input, textarea {
+    &:invalid {
+        border: .125rem solid #FF5959;
+        
+        &[required] + .error {
+            display: flex;
+            gap: .25rem;
+            align-items: center;
+
+            font: var(--text-sm);
+            color: #FF5959;
+            margin-top: .25rem;
+        }
+
+        &:not(:focus):valid + .error {
+            display: none;
+        }
+    }
 }

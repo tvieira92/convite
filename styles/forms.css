@@ -9,10 +9,15 @@ fieldset {
     border: none;
     display: grid;
     gap: 1rem;
+
 }
 
 legend {
     font: 400 1rem/1.25 var(--font-family);
 
-    margin-bottom: .75rem;
+    margin-bottom: 1rem;
+}
+
+fieldset + fieldset {
+    margin-top: 3rem;
 }

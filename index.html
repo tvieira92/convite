@@ -48,40 +48,56 @@
 
                             <div class="input-wrapper">
                             <legend>Título</legend>
-                            <input id="localname" name="localname" type="text" placeholder="Nome do evento">
+                            <input id="localname" name="localname" type="text" placeholder="Nome do evento" required>
+                            <div class="error">
+                                <img src="assets/icons/circle-alert-red.svg" alt="ícone de alerta vermelho">
+                                <span>Insira o nome do evento</span>
+                            </div>
                             </div>
 
-                            <div class="input-wrapper">
-                            <legend>Início</legend>
-                            <input id="datetime" name="datetime" type="datetime-local">
-                            </div>
+                            <div class="flex">
+                                <div class="input-wrapper flex-2">
+                                <legend>Início</legend>
+                                <input id="datetime" name="datetime" type="datetime-local">
+                                </div>
+                            
 
-                            <div class="input-wrapper">
-                            <legend>Fim</legend>
-                            <input id="datetime" name="datetime" type="datetime-local">
+                            
+                                <div class="input-wrapper flex-2">
+                                <legend>Fim</legend>
+                                <input id="datetime" name="datetime" type="datetime-local">
+                                </div>
                             </div>
+                            
 
-                            <div class="select-wrapper">
-                                <legend>Tipo</legend>
-                                <select name="type" id="type">
-                                    <option value="online">Online</option>
-                                    <option value="presencial">Presencial</option>
-                                </select>
-                            </div>
+                            <div class="flex">
+                                <div class="button-wrapper flex-2">
+                                    <legend>Tipo</legend>
+                                    <select name="type" id="type">
+                                        <option value="online">Online</option>
+                                        <option value="presencial">Presencial</option>
+                                    </select>
+                                </div>
+                            
 
-                            <div class="input-wrapper">
-                            <legend>Local</legend>
-                            <input id="local" name="local" type="text" placeholder="Link ou endereço">
+                            
+                                <div class="input-wrapper flex-2">
+                                <legend>Local</legend>
+                                <input id="local" name="local" type="text" placeholder="Link ou endereço">
+                                </div>
                             </div>
 
                             <div class="textarea-wrapper">
                                 <legend>Descrição</legend>
-                                <textarea name="descryption" id="descryption" cols="60" rows="5" placeholder="Escreva os detalhes do evento">
-
-
-                                </textarea>
-                                
+                                <textarea name="descryption" id="descryption" cols="20" rows="5" placeholder="Escreva os detalhes do evento" required></textarea>
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert-red.svg" alt="ícone de alerta vermelho">
+                                    <span>Preencha com a descrição</span>
+                                </div>
                             </div>
+                        </div>
+
+                            
 
                         </fieldset>
 

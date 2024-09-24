@@ -34,7 +34,7 @@ main {
 }
 
 aside {
-    border: 10px solid black;
+    /*border: 10px solid black;*/
     border-radius: 12px;
     background-image: url(../assets/Background.png);
     background-repeat: no-repeat;

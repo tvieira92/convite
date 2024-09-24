@@ -30,6 +30,22 @@ main {
         & h2 {
             font: 600 1.12rem/1.25 var(--font-family-2);
         }
+
+        .customization {
+            
+        }
+    }
+
+    .customization {
+        display: flex;
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+        gap: .75rem;
+        align-items: center;
+
+        & h2 {
+            font: 600 1.12rem/1.25 var(--font-family-2);
+        }
     }
 }
 

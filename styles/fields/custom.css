@@ -1,7 +1,10 @@
+
 .color-buttons {
     display: flex;
     justify-content: space-around;
     max-width: 40rem;
+
+   
     
 }
 

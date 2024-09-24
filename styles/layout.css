@@ -9,15 +9,18 @@
 main {
     overflow: auto;
     padding: 5rem 8.125rem 5rem 8.125rem;
-    border: 20px solid black;
+    margin: 1.25rem;
+
+    
     border-radius: 12px;
 
     & .main-container {
         max-width: 35rem;
-        margin-left: auto;
+        align-items: center;
+        
     }
 
-    & .event {
+     .event {
         display: flex;
         margin-top: 2.5rem;
         margin-bottom: 1.5rem;
@@ -31,12 +34,13 @@ main {
 }
 
 aside {
-    border: 20px solid black;
+    border: 10px solid black;
     border-radius: 12px;
     background-image: url(../assets/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
+    margin: 1.25rem;
     padding: 1.25rem;
 
     & .aside-container{

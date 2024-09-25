@@ -108,23 +108,154 @@
 
                             <span>Cor principal</span>
                             <div class="color-buttons">
-                                
-                                <div class="color-button" style="background-color: #59B2FF;" onclick="selectColor('#59B2FF')"></div>
-                                <div class="color-button" style="background-color: #6A59FF;" onclick="selectColor('#6A59FF')"></div>
-                                <div class="color-button" style="background-color: #B259FF;" onclick="selectColor('#B259FF')"></div>
-                                <div class="color-button" style="background-color: #FF59F9;" onclick="selectColor('#FF59F9')"></div>
-                                <div class="color-button" style="background-color: #FF598B;" onclick="selectColor('#FF598B')"></div>
-                                <div class="color-button" style="background-color: #FF5959;" onclick="selectColor('#FF5959')"></div>
-                                <div class="color-button" style="background-color: #FF8B59;" onclick="selectColor('#FF8B59')"></div>
-                                <div class="color-button" style="background-color: #FFCD59;" onclick="selectColor('#FFCD59')"></div>
-                                <div class="color-button" style="background-color: #E1FF59;" onclick="selectColor('#E1FF59')"></div>
-                                <div class="color-button" style="background-color: #59FF91;" onclick="selectColor('#59FF91')"></div>
-                                <div class="color-button" style="background-color: #59FFF9;" onclick="selectColor('#59FFF9')"></div>
+                                <div class="inner-button">
+                                    <div class="color-button" style="background-color: #59B2FF;" onclick="selectColor('#59B2FF')">
+                                        <input type="radio" name="button-color" value="cor1" id="cor1">
+                                    </div>
+                                </div>
+                                <div class="inner-button">
+                                    <div class="color-button" style="background-color: #6A59FF;" onclick="selectColor('#6A59FF')">
+                                        <input type="radio" name="button-color" value="cor2" id="cor2">
+                                    </div>
+                                </div>
+                                <div class="inner-button">
+                                    <div class="color-button" style="background-color: #B259FF;" onclick="selectColor('#B259FF')">
+                                        <input type="radio" name="button-color" value="cor3" id="cor3">
+                                    </div>
+                                </div>
+                                <div class="inner-button">
+                                    <div class="color-button" style="background-color: #FF59F9;" onclick="selectColor('#FF59F9')">
+                                        <input type="radio" name="button-color" value="cor4" id="cor4">
+                                    </div>
+                                </div>
+                                <div class="inner-button">
+                                    <div class="color-button" style="background-color: #FF598B;" onclick="selectColor('#FF598B')">
+                                        <input type="radio" name="button-color" value="cor5" id="cor5">   
+                                    </div>
+                                </div>
+                                <div class="inner-button">
+                                    <div class="color-button" style="background-color: #FF5959;" onclick="selectColor('#FF5959')">
+                                        <input type="radio" name="button-color" value="cor6" id="cor6"> 
+                                    </div>
+                                </div>
+                                <div class="inner-button">
+                                    <div class="color-button" style="background-color: #FF8B59;" onclick="selectColor('#FF8B59')">
+                                        <input type="radio" name="button-color" value="cor7" id="cor7">
+                                    </div>
+                                </div>
+                                <div class="inner-button">
+                                    <div class="color-button" style="background-color: #FFCD59;" onclick="selectColor('#FFCD59')">
+                                        <input type="radio" name="button-color" value="cor8" id="cor8">
+                                    </div>
+                                </div>
+                                <div class="inner-button">
+                                    <div class="color-button" style="background-color: #E1FF59;" onclick="selectColor('#E1FF59')">
+                                        <input type="radio" name="button-color" value="cor9" id="cor9">
+                                    </div>
+                                </div>
+                                <div class="inner-button">
+                                    <div class="color-button" style="background-color: #59FF91;" onclick="selectColor('#59FF91')">
+                                        <input type="radio" name="button-color" value="cor10" id="cor10">
+                                    </div>
+                                </div>
+                                <div class="inner-button">
+                                    <div class="color-button" style="background-color: #59FFF9;" onclick="selectColor('#59FFF9')">
+                                        <input type="radio" name="button-color" value="cor11" id="cor11">
+                                    </div>
+                                </div>
 
                             </div>
                             
-                                
-                            
+                            <div class="input-wrapper">
+                                <legend class="event-theme">Tema do evento</legend>
+                                <div class="radio-wrapper">
+                                    
+                                        <div class="radio-inner content-tag">
+                                            <div class="radio-image"></div>
+                                            <input type="radio" name="event-list" value="birthday" id="birthday">
+                                            <img src="assets/images/aniversário.jpg" alt="evento aniversário">
+                                            <label for="birthday">Aniversário</label>
+                                        </div>
+
+                                        <div class="radio-inner content-tag">
+                                            <div class="radio-image"></div>
+                                            <input type="radio" name="event-list" value="juvenile" id="juvenile">
+                                            <img src="assets/images/infantil.jpg" alt="evento infantil">
+                                            <label for="juvenile">Infantil</label>
+                                        </div>
+
+                                        <div class="radio-inner content-tag">
+                                            <div class="radio-image"></div>
+                                            <input type="radio" name="event-list" value="graduate" id="graduate">
+                                            <img src="assets/images/formatura.jpg" alt="evento graduação">
+                                            <label for="graduate">Formatura</label>
+                                        </div>
+
+                                        <div class="radio-inner content-tag">
+                                            <div class="radio-image"></div>
+                                            <input type="radio" name="event-list" value="marriage" id="marriage">
+                                            <img src="assets/images/casamento.jpg" alt="evento casamento">
+                                            <label for="marriage">Casamento</label>
+                                        </div>
+
+                                        <div class="radio-inner content-tag">
+                                            <div class="radio-image"></div>
+                                            <input type="radio" name="event-list" value="baby shower" id="baby shower">
+                                            <img src="assets/images/cha-de-bebe.jpg" alt="evento chá de bebe">
+                                            <label for="baby shower">Chá de bebê</label>
+                                        </div>
+
+                                        <div class="radio-inner content-tag">
+                                            <div class="radio-image"></div>
+                                            <input type="radio" name="event-list" value="pot tea" id="pot tea">
+                                            <img src="assets/images/cha-de-panela.jpg" alt="evento chá de panela">
+                                            <label for="juvenile">Chá de panela</label>
+                                        </div>
+
+                                        <div class="radio-inner content-tag">
+                                            <div class="radio-image"></div>
+                                            <input type="radio" name="event-list" value="carnival" id="carnival">
+                                            <img src="assets/images/carnaval.jpg" alt="evento infantil">
+                                            <label for="carnival">Carnaval</label>
+                                        </div>
+
+                                        <div class="radio-inner content-tag">
+                                            <div class="radio-image"></div>
+                                            <input type="radio" name="event-list" value="easter" id="easter">
+                                            <img src="assets/images/pascoa.jpg" alt="evento pascoa">
+                                            <label for="easter">Páscoa</label>
+                                        </div>
+
+                                        <div class="radio-inner content-tag">
+                                            <div class="radio-image"></div>
+                                            <input type="radio" name="event-list" value="saojoao" id="saojoao">
+                                            <img src="assets/images/saojoao.jpg" alt="evento São João">
+                                            <label for="saojoao">São João</label>
+                                        </div>
+
+                                        <div class="radio-inner content-tag">
+                                            <div class="radio-image"></div>
+                                            <input type="radio" name="event-list" value="helloween" id="helloween">
+                                            <img src="assets/images/halloween.jpg" alt="evento helloween">
+                                            <label for="helloween">Halloween</label>
+                                        </div>
+
+                                        <div class="radio-inner content-tag">
+                                            <div class="radio-image"></div>
+                                            <input type="radio" name="event-list" value="christmas" id="christmas">
+                                            <img src="assets/images/natal.jpg" alt="evento Natal">
+                                            <label for="christmas">Natal</label>
+                                        </div>
+
+                                        <div class="radio-inner content-tag">
+                                            <div class="radio-image"></div>
+                                            <input type="radio" name="event-list" value="other" id="other">
+                                            <img src="assets/images/outro.jpg" alt="evento outro">
+                                            <label for="other">Outro</label>
+                                        </div>
+                                </div>
+
+                            </div>
                             
 
                         </fieldset>

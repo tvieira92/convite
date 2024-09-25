@@ -4,8 +4,8 @@
     justify-content: space-around;
     max-width: 40rem;
 
-   
     
+
 }
 
 .color-button {
@@ -17,4 +17,15 @@
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); /* Opcional: adicionar sombra para efeito visual */
 }
 
+.inner-button {
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;  
+}
 
+&:hover, &:focus-within {
+    border: 3px solid var(--brand-light);
+    border-radius: 50%;
+}
+}

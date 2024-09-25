@@ -68,3 +68,13 @@ img {
 .flex-1 {
     flex: 1;
 }
+
+.content-tag {
+    display: inline-block;
+    padding: .25rem .5rem .20rem .5rem;
+    background-color: var(--input-stroke);
+    /*margin: .75rem;*/
+    border-radius: .5rem;
+    font: var(--font-family);
+    color: var(--text);
+}

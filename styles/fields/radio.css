@@ -1,0 +1,39 @@
+.event-theme {
+    margin-top: 1.75rem;
+}
+
+.radio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: 1rem;
+    max-width: 40rem;
+    text-align: center;
+
+    img {
+        border-radius: .25rem;
+        align-items: center;
+        max-width: 100%;
+        
+    }
+}
+
+.radio-inner {
+    border: 1px solid var(--input-placeholder);
+    
+    display: grid;
+    justify-items: center;
+
+    position: relative;
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    &:hover, &:focus-within {
+        border: 2px solid var(--brand-light);
+    }
+}
+

@@ -25,7 +25,7 @@
 }
 
 &:hover, &:focus-within {
-    border: 3px solid var(--brand-light);
+    outline: 3px solid var(--brand-light);
     border-radius: 50%;
 }
 }

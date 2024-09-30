@@ -62,53 +62,10 @@
 }
 
 input:checked + .slider {
-    background-color: var(--input-placeholder);
+    background-color: var(--brand-light);
 }
 
 input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-.droparea.css:
-
-.droparea-wrapper {
-    max-width: 8.5rem;
-    margin-top: 1.25rem;
-    margin-left: 5rem;
-    display: flex;
-    flex-direction: column;
-
-    
-}
-
-.dropzone {
-    display: flex;
-    justify-content: center;
-    gap: .5rem;
-    border-radius: .5rem;
-    padding: .75rem;
-    text-align: center;
-    cursor: pointer;
-
-    margin-top: .50rem;
-    
-    background-color: var(--input-stroke);
-
-    position: relative;
-    .dropzone:hover {
-        background-color: var(--brand-light);
-    }
-    
-    .dropzone img {
-        max-width: 100px;
-        margin-bottom: 10px;
-    }
-
-    & input {
-        position: absolute;
-        opacity: 0;
-        inset: 0;
-        
-        
-    }
-}

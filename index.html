@@ -37,7 +37,7 @@
                     
                     <h1>Crie seu convite</h1>
 
-                    <form>
+                    <form method="post" enctype="multipart/form-data">
                         
                         <fieldset class="about-event">
                             <div class="event">
@@ -48,7 +48,7 @@
 
                             <div class="input-wrapper">
                             <legend>Título</legend>
-                            <input id="localname" name="localname" type="text" placeholder="Nome do evento" required>
+                            <input type="text" id="localname" name="localname" placeholder="Nome do evento" required>
                             <div class="error">
                                 <img src="assets/icons/circle-alert-red.svg" alt="ícone de alerta vermelho">
                                 <span>Insira o nome do evento</span>
@@ -257,6 +257,7 @@
 
                             </div>
 
+                            <div class="flex">
                             <div class="switch-wrapper flex-2">
                                 <legend>Estilo</legend>
                                     <label class="switch">
@@ -276,9 +277,10 @@
                                         <input type="file" id="cover-photo" name="cover-photo">
                                         <img src="assets/icons/upload.svg" alt="ícone de upload">
                                         
-                                        <p>Selecionar</p>
+                                        <span>Selecionar</span>
                                         
                                     </div>
+                                    
                                     
         
                             </div>
@@ -286,6 +288,62 @@
                             
 
                         </fieldset>
+
+                        <fieldset class="info-contact">
+                            
+                                <div class="contacts">
+                                    <img src="assets/icons/contact.svg" alt="ícone de contato">
+                                    <h2>Dados para contato</h2>
+                                </div>
+
+                            <div class="input-wrapper">
+                                <legend>Nome</legend>
+                                <input type="text" id="name" placeholder="Nome completo" required>
+                            </div>
+
+                           
+                            <div class="flex">
+                            <div class="input-wrapper flex-2">
+                                <legend>E-mail</legend>
+                                <input type="text" id="email" name="email" placeholder="exemplo@email.com">
+                            </div>
+
+                            <div class="input-wrapper flex-2">
+                                <legend>Telefone</legend>
+                                <input type="text" id="telefone" name="telefone" placeholder="(99) 99999-9999">
+                            </div>
+
+
+                            </div>
+                            
+                            <div class="divider"></div>
+                        </fieldset>
+
+                        <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                            
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms" id="terms">
+                            <label for="terms">Li e concordo com os <strong>Termos e condições</strong> e com a <strong>Política de Privacidade</strong></label>
+                        </div>
+
+                        <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms-ac" id="ac-mail">
+                            <label for="terms">Aceito receber atualizações e promoções por e-mail</label>
+                        </div>
+
+                        <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms-sms" id="ac-sms">
+                            <label for="terms">Aceito receber atualizações e promoções por SMS</label>
+                        </div>
+
+                        <div class="action-wrapper">
+                            <button class="primary" type="submit">
+                                <img src="assets/icons/ticket.svg" alt="ícone de ticket">
+                                Gerar convite
+                            </button>
+                        </div>
 
                     </form>
 

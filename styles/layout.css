@@ -1,15 +1,21 @@
 #invite-page {
     display: grid;
-    grid-template-columns: 32.78% 67.22%;
+    grid-template-columns: 1fr 2fr;
 
+    justify-content: center;
     height: 100vh;
     overflow: hidden;
+    margin-inline: auto;
+
+    
 }
 
 main {
     overflow: auto;
     padding: 5rem 8.125rem 5rem 8.125rem;
     margin: 1.25rem;
+    background-color: var(--shape-body);
+    
 
     
     border-radius: 12px;
